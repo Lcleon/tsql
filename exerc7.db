@@ -1,0 +1,18 @@
+--Ordenando e comandos de atalho
+--selecionando multiplas linhas(ALT + mouse)
+--Organizando(CTRL + D para selecionar os espaços; vírgila e depois ENTER, e todas as linhas estarão empilhadas):
+
+SELECT 
+   product_length_cm as t7,
+   product_height_cm as t8,
+   product_weight_g as t6,
+   product_description_lenght as t5,
+   product_name_lenght as t4,
+   product_width_cm as t3,
+   product_category_name as t2,
+   product_id as t1
+FROM
+    tb_products;
+
+
+    

@@ -1,0 +1,9 @@
+SELECT 
+    COUNT(*) as qtd_linhas,
+    COUNT(product_id) as qtd_produtos,
+    COUNT(DISTINCT product_id) as qtd_produtos_distintos,
+    COUNT(DISTINCT product_category_name) as qtd_categorias_distintas
+FROM
+    tb_products
+WHERE
+    product_category_name = 'artes'
