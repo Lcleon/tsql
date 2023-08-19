@@ -1,0 +1,26 @@
+SELECT
+  MAX(product_weight_g) as maior_peso,
+  MIN(product_weight_g) as menor_peso,
+  AVG(product_weight_g) as media_peso
+FROM 
+  tb_products
+WHERE
+  product_category_name = 'beleza_saude'
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  

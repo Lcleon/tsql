@@ -1,0 +1,15 @@
+SELECT
+    product_category_name,
+    MAX(product_weight_g) as maior_peso,
+    MIN(product_weight_g) as menor_peso
+FROM
+    tb_products
+
+
+
+
+
+
+  
+  
+  

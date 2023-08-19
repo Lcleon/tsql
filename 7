@@ -1,0 +1,16 @@
+SELECT
+    product_category_name,
+    COUNT(*) as qtde_product,
+    MAX(product_weight_g) as mais_pesado,
+    MIN(product_weight_g) as mais_leve,
+    AVG(product_weight_g) as media_peso
+FROM
+    tb_products
+WHERE
+    product_category_name is NOT NULL
+AND
+    product_category_name != 'alimentos'
+AND
+    product_category_name <> 'alimentos_bebidas'
+GROUP BY
+    product_category_name;
