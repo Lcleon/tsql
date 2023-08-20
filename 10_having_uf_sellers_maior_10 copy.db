@@ -4,8 +4,10 @@ SELECT
 FROM
     tb_sellers
 WHERE
+    --Filtro pré agregação
     seller_state IN('SP', 'RJ', 'PR', 'AC')
 GROUP BY
     seller_state
+    --filtro pós agregação
 HAVING
      qtde_sellers > 10;
