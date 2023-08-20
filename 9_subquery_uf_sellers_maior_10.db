@@ -1,0 +1,9 @@
+SELECT *
+FROM(
+        SELECT seller_state,
+            count(*) as qtde_sellers
+        FROM tb_sellers
+        GROUP BY seller_state
+    ) as t1
+WHERE
+    qtde_sellers > 10

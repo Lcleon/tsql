@@ -1,0 +1,10 @@
+
+SELECT
+    seller_state,
+    count(DISTINCT seller_id)
+FROM
+    tb_sellers
+WHERE
+    seller_state IN ('SP', 'RJ', 'PR')
+GROUP BY
+    seller_state

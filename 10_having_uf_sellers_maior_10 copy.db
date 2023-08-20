@@ -1,0 +1,11 @@
+SELECT
+    seller_state,
+    count(*) as qtde_sellers
+FROM
+    tb_sellers
+WHERE
+    seller_state IN('SP', 'RJ', 'PR', 'AC')
+GROUP BY
+    seller_state
+HAVING
+     qtde_sellers > 10;
